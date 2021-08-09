@@ -122,8 +122,3 @@ h3 {
     cursor: pointer;
     filter: invert(49%) sepia(48%) saturate(945%) hue-rotate(301deg) brightness(102%) contrast(97%);
 }
-
-/* desktop */
-@media screen and (min-width: 376px) {
-   
-}
