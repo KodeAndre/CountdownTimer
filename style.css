@@ -1,0 +1,89 @@
+:root {
+    font-size: 14px;
+    font-family: 'Red Hat Text';
+    color: #fff;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background:
+    url(/images/bg-stars.svg) repeat,
+    url(/images/pattern-hills.svg) repeat-x bottom,
+    linear-gradient(0deg, #643c4d 0%, #1d1e2c 80%);
+}
+
+h1 {
+    letter-spacing: 10px;
+}
+
+h2 {
+    color: #fb6087;
+    font-size: 4em;
+}
+
+h3 {
+    color: #8486a9;
+    letter-spacing: 5px;
+}
+
+/* Timer */
+
+#content {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    padding-bottom: 50px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Footer kinda */
+
+.attribution { 
+    font-size: 11px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+}
+
+.attribution a { color: #3e52a3; }
+
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fb:hover {
+    cursor: pointer;
+    filter: invert(49%) sepia(48%) saturate(945%) hue-rotate(301deg) brightness(102%) contrast(97%);
+}
+
+.insta:hover {
+    cursor: pointer;
+    filter: invert(49%) sepia(48%) saturate(945%) hue-rotate(301deg) brightness(102%) contrast(97%);
+}
+
+.pin:hover {
+    cursor: pointer;
+    filter: invert(49%) sepia(48%) saturate(945%) hue-rotate(301deg) brightness(102%) contrast(97%);
+}
+
+/* desktop */
+@media screen and (min-width: 376px) {
+   
+}
