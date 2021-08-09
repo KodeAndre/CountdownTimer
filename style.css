@@ -83,7 +83,7 @@ h3 {
 		-moz-transform: rotateX(0deg); /* Firefox */
                 transform: rotateX(0deg);
 	}
-	10% {
+	100% {
 		-webkit-transform: rotateX(180deg); /* Safari and Chrome */
 		-moz-transform: rotateX(180deg); /* Firefox */
 		transform: rotateX(180deg);

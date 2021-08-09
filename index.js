@@ -19,8 +19,6 @@
     document.getElementById("minutess").innerHTML = minutes
     document.getElementById("secondss").innerHTML = seconds
 
-
-        
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc);
