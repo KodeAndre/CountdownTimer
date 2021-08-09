@@ -10,8 +10,8 @@
 
 body {
     background:
-    url(/images/bg-stars.svg) repeat,
-    url(/images/pattern-hills.svg) repeat-x bottom,
+    url(./images/bg-stars.svg) repeat,
+    url(./images/pattern-hills.svg) repeat-x bottom,
     linear-gradient(0deg, #643c4d 0%, #1d1e2c 80%);
 }
 
