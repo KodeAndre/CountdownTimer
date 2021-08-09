@@ -26,6 +26,6 @@
         document.getElementById("hourss").innerHTML = "" 
         document.getElementById("minutess").innerHTML = ""
         document.getElementById("secondss").innerHTML = ""
-        
+        document.getElementById("title").innerHTML = "Countdown Ended."
     }
     }, 1000);
