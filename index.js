@@ -18,13 +18,16 @@
     document.getElementById("hourss").innerHTML = hours
     document.getElementById("minutess").innerHTML = minutes
     document.getElementById("secondss").innerHTML = seconds
+
+
         
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc);
-        document.getElementById("days").innerHTML = ""
-        document.getElementById("hours").innerHTML = "" 
-        document.getElementById("mins").innerHTML = ""
-        document.getElementById("secs").innerHTML = ""
+        document.getElementById("dayss").innerHTML = ""
+        document.getElementById("hourss").innerHTML = "" 
+        document.getElementById("minutess").innerHTML = ""
+        document.getElementById("secondss").innerHTML = ""
+        
     }
     }, 1000);
