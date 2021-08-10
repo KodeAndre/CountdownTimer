@@ -122,3 +122,69 @@ h3 {
     cursor: pointer;
     filter: invert(49%) sepia(48%) saturate(945%) hue-rotate(301deg) brightness(102%) contrast(97%);
 }
+
+@media screen and (max-width: 426px) {
+    h1 {
+        letter-spacing: 5px;
+        font-size: 1em;
+    }
+    
+    h2 {
+        color: #fb6087;
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        color: #8486a9;
+        letter-spacing: 4px;
+        font-size: 0.6rem;
+    }
+    
+    /* Timer */
+    
+    #content {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .title {
+        padding-bottom: 50px;
+    }
+    
+    .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #secondss {
+        padding: 20px;
+        background-color: #1d1e2c;
+        border-radius: 10px;
+        box-shadow: 0 10px 3px #151620;
+    }
+    
+    #minutess {
+        padding: 20px;
+        background-color: #1d1e2c;
+        border-radius: 10px;
+        box-shadow: 0 10px 3px #151620;
+    }
+    
+    #hourss {
+        padding: 20px;
+        background-color: #1d1e2c;
+        border-radius: 10px;
+        box-shadow: 0 10px 3px #151620;
+    }
+    
+    #dayss {
+        padding: 20px;
+        background-color: #1d1e2c;
+        border-radius: 10px;
+        box-shadow: 0 10px 3px #151620;
+    }
+}
