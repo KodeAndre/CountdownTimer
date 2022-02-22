@@ -1,31 +1,42 @@
-    // The data/time we want to countdown to
-    let countDownDate = new Date("Feb 22, 2023 00:00:00").getTime();
+document.addEventListener('DOMContentLoaded', function () {
 
-    // Run myfunc every second
-    let myfunc = setInterval(function() {
+    const daysCountdown = document.getElementById("dayss")
+    const hoursCountdown = document.getElementById("hourss")
+    const minutesCountdown = document.getElementById("minutess")
+    const secondsCountdown = document.getElementById("secondss")
 
-    let now = new Date().getTime();
-    let timeleft = countDownDate - now;
+    const currentTime = new Date()
+    let yearOfTheEvent = currentTime.getFullYear()
+    let eventDate = new Date(yearOfTheEvent, 01, 22)
 
-    // Calculating the days, hours, minutes and seconds left
-    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    function countdown() {
+        const now = new Date()
 
-    // Result is output to the specific element
-    document.getElementById("dayss").innerHTML = days.toString();
-    document.getElementById("hourss").innerHTML = hours.toString();
-    document.getElementById("minutess").innerHTML = minutes.toString();
-    document.getElementById("secondss").innerHTML = seconds.toString();
+        if (now > eventDate) {
+            eventDate = new Date(yearOfTheEvent + 1, 01, 04)
+        } else if (now.getFullYear() === eventDate.getFullYear() + 1) {
+            eventDate = new Date(now.getFullYear(), 01, 04)
+        }
 
-    // Display the message when countdown is over
-    if (timeleft < 0) {
-        clearInterval(myfunc);
-        document.getElementById("dayss").innerHTML = ""
-        document.getElementById("hourss").innerHTML = ""
-        document.getElementById("minutess").innerHTML = ""
-        document.getElementById("secondss").innerHTML = ""
-        document.getElementById("title").innerHTML = "Countdown Ended."
-    }
-    }, 1000);
+        const currentTime = now.getTime()
+        const eventTime = eventDate.getTime()
+        const remainingTime = eventTime - currentTime
+
+        let seconds = Math.floor(remainingTime / 1000)
+        let minutes = Math.floor(seconds / 60)
+        let hours = Math.floor(minutes / 60)
+        let days = Math.floor(hours / 24)
+
+        hours %= 24
+        minutes %= 60
+        seconds %= 60
+
+            daysCountdown.innerHTML = days
+            hoursCountdown.innerHTML = hours
+            minutesCountdown.innerHTML = minutes
+            secondsCountdown.innerHTML = seconds
+
+            setTimeout(countdown, 1000)
+    } // end of countdown
+    countdown()
+}) // end of DOMContentLoaded
