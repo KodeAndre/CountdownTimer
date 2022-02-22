@@ -1,3 +1,4 @@
+// https://medium.com/@jmartinez729/how-to-build-a-birthday-countdown-website-with-javascript-4f813e34439e
 document.addEventListener('DOMContentLoaded', function () {
 
     const daysCountdown = document.getElementById("dayss")
@@ -37,6 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
             secondsCountdown.innerHTML = seconds
 
             setTimeout(countdown, 1000)
-    } // end of countdown
+    }
     countdown()
-}) // end of DOMContentLoaded
+})
